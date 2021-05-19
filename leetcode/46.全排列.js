@@ -24,8 +24,8 @@ var permute = function (nums) {
             return;                 // 结束当前递归分支
         }
         for (const i of nums) {
-            // if (path.includes(num)) continue; // 别这么写！查找的时间是O(n)，增加时间复杂度
-            if (used[num]) continue; // 使用过的，跳过
+            // if (path.includes(i)) continue; // 别这么写！查找的时间是O(n)，增加时间复杂度
+            if (used[i]) continue; // 使用过的，跳过
 
             path.push(i)        // 选择当前的数，加入path
             used[i] = true      // 记录一下 使用了
